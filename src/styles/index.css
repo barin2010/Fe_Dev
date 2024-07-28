@@ -1,0 +1,197 @@
+@import './reset.css';
+
+/* 400 */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Regular.woff') format('woff'),
+    url('./fonts//Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 700 */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Bold.woff') format('woff'),
+    url('./fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 300 */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-LightBETA.woff') format('woff'),
+    url('./fonts/Inter-LightBETA.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* 400 */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.woff') format('woff'),
+    url('./fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 500 */
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Medium.woff') format('woff'),
+    url('./fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 400 */
+@font-face {
+  font-family: 'Mulish';
+  src: url('./fonts/Mulish-Regular.woff') format('woff'),
+    url('./fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 400 */
+@font-face {
+  font-family: 'Arial';
+  src: url('./fonts/ArialMT.woff') format('woff'),
+    url('./fonts/ArialMT.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 700 */
+@font-face {
+  font-family: 'Arial';
+  src: url('./fonts/Arial-BoldMT.woff') format('woff'),
+    url('./fonts/Arial-BoldMT.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 300 */
+@font-face {
+  font-family: 'Px Grotesk Pan';
+  src: url('./fonts/PxGroteskPan-Light.woff') format('woff'),
+    url('./fonts/PxGroteskPan-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* 400 */
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('./fonts/SF\ Compact\ Display\ Regular.woff') format('woff'),
+    url('./fonts/SF\ Compact\ Display\ Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 400 */
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-Regular.woff') format('woff'),
+    url('./fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 700 */
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-Bold.woff') format('woff'),
+    url('./fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 700 */
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-Bold.woff') format('woff'),
+    url('./fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 400 */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff') format('woff'),
+    url('./fonts/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* 00 */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Medium.woff') format('woff'),
+    url('./fonts/Roboto-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* 700 */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Bold.woff') format('woff'),
+    url('./fonts/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* 600 */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('./fonts/SF\ Pro\ Text\ Semibold.woff') format('woff'),
+    url('./fonts/SF\ Pro\ Text\ Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  /* font */
+  --font-family: 'Satoshi', sans-serif;
+  --second-family: 'Inter', sans-serif;
+  --third-family: 'Mulish', sans-serif;
+  --font3: 'Arial', sans-serif;
+  --font4: 'Px Grotesk Pan', sans-serif;
+  --font5: 'Manrope', sans-serif;
+  --font6: 'SF Compact Display', sans-serif;
+  --font7: 'Roboto', sans-serif;
+  --font8: 'SF Pro Text', sans-serif;
+
+  /* color */
+  --primary-font-color: #18306c;
+  --white-color: #fff;
+  --red-color: #f2683c;
+  --blue-color: #eaf0ff;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  color: var(--primary-font-color);
+  font-weight: 400;
+  background-color: F5F5F5;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 678px) {
+  .container {
+    max-width: 1920px;
+    width: 100%;
+
+    padding: 0 60px;
+  }
+}

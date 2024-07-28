@@ -1,0 +1,211 @@
+.title {
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: var(--red-color);
+
+  padding-top: 10px;
+  margin-bottom: 107px;
+  width: 100%;
+
+  border-top: 1px solid rgba(24, 48, 108, 0.2);
+}
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.subTitleList {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-wrap: balance;
+}
+.subTitleItem {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.subTitleItem:not(:first-child) {
+  display: none;
+}
+.botton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13px;
+  max-width: 40px;
+}
+.bottnPrev,
+.bottonNext {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.bottnPrev {
+  transform: rotate(180deg);
+}
+.progressbar {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(24, 48, 108, 0.2);
+
+  margin-bottom: 10px;
+}
+.progressbarStatus {
+  display: flex;
+  height: 1px;
+  width: 60%;
+  background-color: var(--red-color);
+}
+.servisesCard {
+  position: relative;
+
+  background-image: image-set(
+    url('../../images/servises/serisesMobile.jpg') 1x,
+    url('../../images/servises/serisesMobile2x-min.jpg') 2x
+  );
+
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 16px 18px 20px;
+  border-radius: 12.2px;
+
+  margin-bottom: 68px;
+}
+.servisesCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 48, 108, 0.8);
+  border-radius: 12.2px;
+  z-index: 1;
+}
+.cardList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 21px;
+}
+.cardItem {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: var(--white-color);
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.cardBotton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  margin-left: auto;
+  z-index: 10;
+}
+.cardBotton:hover,
+.cardBotton:focus {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 1800px;
+  }
+  .progressbar {
+    display: none;
+  }
+  .subTitleItem:not(:first-child) {
+    display: block;
+  }
+  .botton {
+    display: none;
+  }
+  .title {
+    font-size: 24px;
+    padding-top: 16.5px;
+    margin-bottom: 100px;
+  }
+  .grid {
+    display: flex;
+  }
+  .subTitle {
+    width: 470px;
+  }
+  .subTitleItem {
+    position: relative;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    opacity: 0.32;
+  }
+
+  .subTitleItem::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--red-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .subTitleItem:hover,
+  .subTitleItem:focus {
+    opacity: 1;
+  }
+  .subTitleItem:hover::before,
+  .subTitleItem:focus::before {
+    opacity: 1;
+  }
+  .subTitleList {
+    margin-right: 106px;
+  }
+  .cardListWrapper {
+    position: relative;
+
+    padding: 0;
+  }
+  .cardList {
+    position: absolute;
+    top: 35px;
+    left: 220px;
+    width: 779px;
+  }
+
+  .servisesCard {
+    margin-bottom: 101px;
+    padding: 0;
+    width: 357px;
+    height: 735px;
+    padding: 33px;
+  }
+  .cardItem {
+    font-size: 22px;
+
+    color: var(--primary-font-color);
+    opacity: 0.8;
+  }
+  .cardBotton {
+    width: 53px;
+    height: 53px;
+    margin-top: auto;
+  }
+  .cardBottonImg {
+    width: 18px;
+  }
+}
