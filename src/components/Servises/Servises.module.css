@@ -124,6 +124,7 @@
 @media (min-width: 768px) {
   .wrapper {
     width: 1800px;
+    margin: 0 auto;
   }
   .progressbar {
     display: none;
