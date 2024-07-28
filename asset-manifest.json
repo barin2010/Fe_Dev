@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Fe_Dev/static/css/main.081162ae.css",
+    "main.css": "/Fe_Dev/static/css/main.ac027e41.css",
     "main.js": "/Fe_Dev/static/js/main.5a382abb.js",
     "static/media/borderDesc@2x.jpg": "/Fe_Dev/static/media/borderDesc@2x.3fd82cf3b51071a31243.jpg",
     "static/media/ArialMT.woff": "/Fe_Dev/static/media/ArialMT.e4af816a9a4fe4df98eb.woff",
@@ -82,11 +82,11 @@
     "static/media/Arrow.svg": "/Fe_Dev/static/media/Arrow.a913b234a4e1e2506960d841ebcf5d00.svg",
     "static/media/Arrow 18.svg": "/Fe_Dev/static/media/Arrow 18.4530305078db35cf4cb41736a2eef2c4.svg",
     "static/media/burger.svg": "/Fe_Dev/static/media/burger.c8651d21a5ab753f4a7d296974258b98.svg",
-    "main.081162ae.css.map": "/Fe_Dev/static/css/main.081162ae.css.map",
+    "main.ac027e41.css.map": "/Fe_Dev/static/css/main.ac027e41.css.map",
     "main.5a382abb.js.map": "/Fe_Dev/static/js/main.5a382abb.js.map"
   },
   "entrypoints": [
-    "static/css/main.081162ae.css",
+    "static/css/main.ac027e41.css",
     "static/js/main.5a382abb.js"
   ]
 }
