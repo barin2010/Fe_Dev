@@ -138,6 +138,7 @@
 @media (min-width: 768px) {
   .story {
     width: 1920px;
+    margin: 0 auto;
   }
   .gridTop {
     display: grid;
