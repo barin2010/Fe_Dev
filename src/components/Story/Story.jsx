@@ -98,7 +98,7 @@ const Story = () => {
                 <p className={css.cardBottomText}>
                   History and competencies of the company.
                 </p>
-                <a href="#" className={css.cardBottomBoxImg}>
+                <a href="#!" className={css.cardBottomBoxImg}>
                   <img className={css.cardBottomImg} src={arrow} alt="arrow" />
                 </a>
               </div>
