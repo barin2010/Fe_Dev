@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fe_Dev/static/css/main.9c99066c.css",
-    "main.js": "/Fe_Dev/static/js/main.5a382abb.js",
+    "main.css": "/Fe_Dev/static/css/main.2623cb90.css",
+    "main.js": "/Fe_Dev/static/js/main.6d05b9e9.js",
     "static/media/borderDesc@2x.jpg": "/Fe_Dev/static/media/borderDesc@2x.3fd82cf3b51071a31243.jpg",
     "static/media/ArialMT.woff": "/Fe_Dev/static/media/ArialMT.e4af816a9a4fe4df98eb.woff",
     "static/media/Arial-BoldMT.woff": "/Fe_Dev/static/media/Arial-BoldMT.0f72496113227f9e3079.woff",
@@ -10,6 +10,7 @@
     "static/media/borderDesc.jpg": "/Fe_Dev/static/media/borderDesc.ab4d3204f7401979c789.jpg",
     "static/media/storyDesc2@2x.jpg": "/Fe_Dev/static/media/storyDesc2@2x.42f6993e4c340952f7d2.jpg",
     "static/media/frameDesc3@2x.jpg": "/Fe_Dev/static/media/frameDesc3@2x.944f39e4cbeb427e1752.jpg",
+    "static/media/carieerDesc@2x-min.jpg": "/Fe_Dev/static/media/carieerDesc@2x-min.0a60515d524b564ec926.jpg",
     "static/media/borderMobile@2x.jpg": "/Fe_Dev/static/media/borderMobile@2x.31069e4a59de50d0fdce.jpg",
     "static/media/SF Pro Text Semibold.woff": "/Fe_Dev/static/media/SF Pro Text Semibold.e22dd8663de549194b53.woff",
     "static/media/Inter-LightBETA.woff": "/Fe_Dev/static/media/Inter-LightBETA.ed9a7ce1dedab5d9333b.woff",
@@ -17,6 +18,7 @@
     "static/media/Inter-Medium.woff": "/Fe_Dev/static/media/Inter-Medium.44e343ff76a98508d309.woff",
     "static/media/Inter-Regular.woff": "/Fe_Dev/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
     "static/media/frameDesc5@2x.jpg": "/Fe_Dev/static/media/frameDesc5@2x.f07188e2e7e54873e267.jpg",
+    "static/media/footerMob@2x.jpg": "/Fe_Dev/static/media/footerMob@2x.64e37e9295682d5901e3.jpg",
     "static/media/serisesMobile2x-min.jpg": "/Fe_Dev/static/media/serisesMobile2x-min.94bb32c6272c70883400.jpg",
     "static/media/storyMobile2@2x.jpg": "/Fe_Dev/static/media/storyMobile2@2x.37f5eeec56d3917f58db.jpg",
     "static/media/frameDesc4@2x.jpg": "/Fe_Dev/static/media/frameDesc4@2x.fd3c5b4e5bd4470cd21b.jpg",
@@ -35,6 +37,7 @@
     "static/media/carieerMob@2x.jpg": "/Fe_Dev/static/media/carieerMob@2x.2bec7f26717124f703d7.jpg",
     "static/media/frameMobile3@2x.jpg": "/Fe_Dev/static/media/frameMobile3@2x.068271fb209a4942c3dc.jpg",
     "static/media/SF Compact Display Regular.woff": "/Fe_Dev/static/media/SF Compact Display Regular.0a1a0d54510dc101e42b.woff",
+    "static/media/carieerDesc.jpg": "/Fe_Dev/static/media/carieerDesc.c3c20701f701330227e8.jpg",
     "static/media/frameMobile2@2x.jpg": "/Fe_Dev/static/media/frameMobile2@2x.96d8066cc0a66afed434.jpg",
     "static/media/Roboto-Medium.woff2": "/Fe_Dev/static/media/Roboto-Medium.fc0337b9cf1cce2e6e1e.woff2",
     "static/media/Roboto-Bold.woff2": "/Fe_Dev/static/media/Roboto-Bold.6cd35edfbc0d7a417131.woff2",
@@ -59,6 +62,7 @@
     "static/media/Mulish-Regular.woff2": "/Fe_Dev/static/media/Mulish-Regular.36c43991bf819e570395.woff2",
     "static/media/frameDesc1.jpg": "/Fe_Dev/static/media/frameDesc1.da00981d036de3fb4f85.jpg",
     "static/media/serisesMobile.jpg": "/Fe_Dev/static/media/serisesMobile.ec8fc19146cfc6c6c292.jpg",
+    "static/media/footerMob.jpg": "/Fe_Dev/static/media/footerMob.6d0057d9f304cc9b6fd9.jpg",
     "static/media/Manrope-Bold.woff": "/Fe_Dev/static/media/Manrope-Bold.b6c4aa0b0b711186d005.woff",
     "static/media/Manrope-Regular.woff": "/Fe_Dev/static/media/Manrope-Regular.2046a49b5fa996c43f44.woff",
     "static/media/storyMobile1.jpg": "/Fe_Dev/static/media/storyMobile1.9081c1121b8f1f10e21b.jpg",
@@ -75,18 +79,29 @@
     "static/media/frameMobile1.jpg": "/Fe_Dev/static/media/frameMobile1.d15cb0e39fbdc389cde3.jpg",
     "static/media/frameMobile6.jpg": "/Fe_Dev/static/media/frameMobile6.36fdf5fe5d11e827e5fb.jpg",
     "static/media/Logo.svg": "/Fe_Dev/static/media/Logo.08247d0d1c2f44426f0674fe6b1055e0.svg",
+    "static/media/logoWhiteMobile.svg": "/Fe_Dev/static/media/logoWhiteMobile.8379a4b73c560c8df0f470a22c9e12ca.svg",
     "static/media/world.svg": "/Fe_Dev/static/media/world.80591d45f7852de2ab7fd0a40eff923e.svg",
+    "static/media/Instagram_blackDesc.svg": "/Fe_Dev/static/media/Instagram_blackDesc.f945395c18c8aa5ac737dfb0371d6616.svg",
+    "static/media/Instagram_blackMob.svg": "/Fe_Dev/static/media/Instagram_blackMob.1b06437a6773f1d1eff381072002a30d.svg",
     "index.html": "/Fe_Dev/index.html",
+    "static/media/TwitterDesc.svg": "/Fe_Dev/static/media/TwitterDesc.bdcbdb8a18ed161daf5b8b8b19a8ae7c.svg",
+    "static/media/TwitterMob.svg": "/Fe_Dev/static/media/TwitterMob.57ac9611483d54b45a9e0865c69aa699.svg",
     "static/media/arrowRight.svg": "/Fe_Dev/static/media/arrowRight.dfdb8dcc090678a976302c8347ef1407.svg",
+    "static/media/LinkedINDesc.svg": "/Fe_Dev/static/media/LinkedINDesc.a2df3c21669fc4433183f30789e77906.svg",
+    "static/media/LinkedINMob.svg": "/Fe_Dev/static/media/LinkedINMob.0c6dbb50c824fe77107d5b93515f9b27.svg",
+    "static/media/Youtube_blackDesc.svg": "/Fe_Dev/static/media/Youtube_blackDesc.81513c8fe71617ad7ddbf8253d4eaba0.svg",
+    "static/media/Youtube_blackMob.svg": "/Fe_Dev/static/media/Youtube_blackMob.f6af74b0347c70854f1f7cbff4fc9b1c.svg",
     "static/media/arrowRightOrange.svg": "/Fe_Dev/static/media/arrowRightOrange.6dbe96c44d812c41ea8932ec5fb60ea0.svg",
     "static/media/Arrow.svg": "/Fe_Dev/static/media/Arrow.a913b234a4e1e2506960d841ebcf5d00.svg",
     "static/media/Arrow 18.svg": "/Fe_Dev/static/media/Arrow 18.4530305078db35cf4cb41736a2eef2c4.svg",
+    "static/media/facebookDesc.svg": "/Fe_Dev/static/media/facebookDesc.ae97ff9bba8a97a9d2bf03a388024707.svg",
+    "static/media/facebookMob.svg": "/Fe_Dev/static/media/facebookMob.4b7c8ae74c87b8b944741054367a3fe0.svg",
     "static/media/burger.svg": "/Fe_Dev/static/media/burger.c8651d21a5ab753f4a7d296974258b98.svg",
-    "main.9c99066c.css.map": "/Fe_Dev/static/css/main.9c99066c.css.map",
-    "main.5a382abb.js.map": "/Fe_Dev/static/js/main.5a382abb.js.map"
+    "main.2623cb90.css.map": "/Fe_Dev/static/css/main.2623cb90.css.map",
+    "main.6d05b9e9.js.map": "/Fe_Dev/static/js/main.6d05b9e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c99066c.css",
-    "static/js/main.5a382abb.js"
+    "static/css/main.2623cb90.css",
+    "static/js/main.6d05b9e9.js"
   ]
 }
