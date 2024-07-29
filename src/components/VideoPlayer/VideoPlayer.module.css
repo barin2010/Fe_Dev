@@ -1,4 +1,10 @@
-.playeerWrapper {
+.videoPlayer {
+  /* width: 1800px; */
+  /* height: 904px; */
+  margin: 0 auto;
+}
+
+.playerWrapper {
   position: relative;
   min-width: 375px;
   margin: 0 auto;
@@ -7,6 +13,7 @@
   justify-content: center;
   padding: 0;
   margin-bottom: 70px;
+  margin: 0 auto;
 }
 
 .buttonMute {
