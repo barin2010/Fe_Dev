@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import css from './Nav.module.css';
 import logo from '../../images/icons/Logo.svg';
 import burger from '../../images/icons/burger.svg';
 import Modal from 'components/Modal/Modal';
 
-
-
 const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  }, [location]);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
   const handleScroll = (event, id) => {
     event.preventDefault();
     const targetElement = document.getElementById(id);
@@ -22,6 +35,7 @@ const Nav = () => {
       });
     }
   };
+
   return (
     <section className={css.navigation}>
       <Modal isOpen={isModalOpen} onClose={closeModal} />
@@ -32,19 +46,31 @@ const Nav = () => {
           </div>
           <ul className={css.navigationList}>
             <li className={css.navigationItem}>
-              <NavLink exact="/" сlassname={css.active}>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => (isActive ? css.active : '')}
+              >
                 Home
               </NavLink>
             </li>
             <li className={css.navigationItem}>
-              <a href="#about" onClick={e => handleScroll(e, 'about')}>
+              <NavLink
+                to="/about#about"
+                className={({ isActive }) => (isActive ? css.active : '')}
+                onClick={e => handleScroll(e, 'about')}
+              >
                 About
-              </a>
+              </NavLink>
             </li>
             <li className={css.navigationItem}>
-              <a href="#services" onClick={e => handleScroll(e, 'services')}>
+              <NavLink
+                to="/services#services"
+                className={({ isActive }) => (isActive ? css.active : '')}
+                onClick={e => handleScroll(e, 'services')}
+              >
                 Services
-              </a>
+              </NavLink>
             </li>
             <li className={css.navigationItem}>
               <a href="#careers" onClick={e => handleScroll(e, 'careers')}>

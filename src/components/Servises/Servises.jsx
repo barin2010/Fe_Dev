@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
@@ -8,9 +8,28 @@ import arrow from '../../images/icons/arrowRight.svg';
 
 const Servises = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const handleTitleClick = index => {
-    setCurrentIndex(index);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleNext = () => {
+    setCurrentIndex(prevIndex => (prevIndex + 1) % servisesData.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      prevIndex => (prevIndex - 1 + servisesData.length) % servisesData.length
+    );
   };
 
   const currentService = servisesData[currentIndex];
@@ -26,25 +45,48 @@ const Servises = () => {
         <div className={css.grid}>
           <div className={css.subTitle}>
             <ul className={css.subTitleList}>
-              {servisesData.map((servis, index) => (
-                <li
-                  key={nanoid()}
-                  className={`${css.subTitleItem} ${
-                    index === currentIndex ? css.active : ''
-                  }`}
-                  onClick={() => handleTitleClick(index)}
-                >
-                  {servis.title}
+              {isMobile ? (
+                <li key={nanoid()} className={css.subTitleItem}>
+                  {currentService.title}
                 </li>
-              ))}
+              ) : (
+                servisesData.map((servis, index) => (
+                  <li
+                    key={nanoid()}
+                    className={`${css.subTitleItem} ${
+                      index === currentIndex ? css.active : ''
+                    }`}
+                    onClick={() => setCurrentIndex(index)}
+                  >
+                    {servis.title}
+                  </li>
+                ))
+              )}
             </ul>
-            <div className={css.botton}>
-              <img className={css.bottnPrev} src={arrow} alt="arrow" />
-              <img className={css.bottonNext} src={arrow} alt="arrow" />
-            </div>
+            {isMobile && (
+              <div className={css.botton}>
+                <img
+                  className={css.bottnPrev}
+                  src={arrow}
+                  alt="arrow"
+                  onClick={handlePrev}
+                />
+                <img
+                  className={css.bottonNext}
+                  src={arrow}
+                  alt="arrow"
+                  onClick={handleNext}
+                />
+              </div>
+            )}
           </div>
           <div className={css.progressbar}>
-            <div className={css.progressbarStatus}></div>
+            <div
+              className={css.progressbarStatus}
+              style={{
+                width: `${((currentIndex + 1) / servisesData.length) * 100}%`,
+              }}
+            ></div>
           </div>
           <div className={css.servisesCard}>
             <div className={css.cardListWrapper}>

@@ -55,18 +55,14 @@
     grid-template-columns: repeat(4, 1fr);
     width: 542px;
   }
-  /* .active {
-    color: var(--red-color);
-  } */
 
   .navigationItem {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
   }
-  .navigationItem.active {
+  .navigationItem .active {
     color: var(--red-color);
-    text-decoration: underline;
   }
   .button {
     display: flex;

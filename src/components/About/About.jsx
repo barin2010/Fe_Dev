@@ -8,10 +8,16 @@ const About = () => {
       <div className="container">
         <div className={css.wrapper}>
           <ul className={css.grid}>
-            {/* <p className={css.gridTitle}> About</p> */}
-            <NavLink to="/about" className={css.gridTitle}>
+            <NavLink
+              to="/about"
+              end
+              className={({ isActive }) =>
+                `${css.gridTitle} ${isActive ? css.active : ''}`
+              }
+            >
               About
             </NavLink>
+
             <li className={`${css.gridItem} ${css.item1}`}>
               <p className={css.aboutTitle}>Mission:</p>
               <p className={css.aboutDesc}>
