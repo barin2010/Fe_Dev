@@ -1,9 +1,11 @@
 .wrapper {
-  width: 375px;
+  /* width: 375px; */
 
   margin: 0 auto;
   background-color: var(--primary-font-color);
-  border-radius: 15px;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
   padding: 30px 20px 95px 20px;
 }
@@ -105,6 +107,7 @@
   line-height: 1.3;
   letter-spacing: 0.01em;
   color: #fff;
+  cursor: pointer;
 }
 .bottonText::before {
   content: '';
@@ -114,6 +117,11 @@
   background-color: var(--white-color);
   bottom: 0;
   left: 0;
+  opacity: 0;
+}
+.bottonText:hover::before,
+.bottonText:focus::before {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -126,6 +134,7 @@
     width: 100%;
     padding: 37px 50px;
     padding-bottom: 45px;
+    border-radius: 20px;
   }
   .carrieerTop {
     padding-bottom: 25px;
@@ -138,7 +147,8 @@
     font-size: 18px;
   }
   .carieerImage {
-    flex-direction: row;
+    gap: 0;
+    flex-direction: row-reverse;
   }
   .grid {
     display: grid;
@@ -152,11 +162,52 @@
   }
   .huston {
     grid-area: a;
+    padding-top: 19px;
+    padding-bottom: 0;
   }
   .carieerImage {
     grid-area: b;
   }
   .carieerBottom {
     grid-area: c;
+    gap: 23px;
+    margin-top: auto;
+  }
+  .hustonItem {
+    font-size: 24px;
+  }
+  .hustonItem span {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+  }
+  .img {
+    width: 601px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .carieerImageWorld {
+    height: 100%;
+    margin-bottom: 0;
+    padding: 40px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .imageWorld {
+    width: 53px;
+  }
+  .textWorld {
+    font-size: 22px;
+    opacity: 1;
+  }
+  .carieerBottonBox {
+    gap: 11px;
+  }
+  .bottonText {
+    font-size: 26px;
+  }
+  .bottonImg {
+    width: 21px;
   }
 }

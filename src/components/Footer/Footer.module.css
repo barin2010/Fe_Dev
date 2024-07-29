@@ -1,0 +1,362 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  grid-template-areas:
+    'a b'
+    'c c'
+    'd e'
+    'i .'
+    'f g'
+    'j .'
+    'k k'
+    'l l'
+    'm m';
+  padding: 40px 20px;
+  /* width: 375px; */
+  margin: 0 auto;
+  background-image: image-set(
+      url('../../images/footer/footerMob.jpg') 1x,
+      url('../../images/footer/footerMob@2x.jpg') 2x
+    ),
+    url('../../images/footer/GroupMob.png');
+
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footerLogo {
+  grid-area: a;
+  width: 137px;
+}
+
+.footerSocial {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+.footerSocialItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20.5px;
+  height: 20.5px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+.footerSocialItem:hover,
+.footerSocialItem:focus {
+  background-color: var(--red-color);
+}
+.contactForm {
+  grid-area: c;
+}
+.contactFormTitle {
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--white-color);
+  margin-top: 91px;
+  margin-bottom: 30px;
+}
+
+.footerAbout {
+  grid-area: d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutTitle {
+  font-size: 18px;
+  color: var(--white-color);
+}
+.aboutList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutItem {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+  opacity: 0.5;
+}
+.footerServisec {
+  grid-area: e;
+}
+.footerCompany {
+  grid-area: i;
+  margin-bottom: 86px;
+}
+.foooterHuston {
+  display: flex;
+  flex-direction: column;
+}
+.hustonTitle {
+  font-size: 18px;
+  color: var(--white-color);
+  text-wrap: balance;
+}
+
+.hustonTitle span {
+  font-size: 14px;
+}
+.footerAdress {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+  opacity: 0.5;
+
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+.footerParallele {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--white-color);
+}
+.huston {
+  grid-area: f;
+  margin-bottom: 41px;
+}
+.dallas {
+  grid-area: g;
+}
+.austin {
+  grid-area: j;
+}
+.footerOfises {
+  grid-area: k;
+  display: flex;
+  width: 212px;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+  margin-top: 78px;
+}
+.ofisesTitle {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+  margin-bottom: 19px;
+}
+.ofisesTextOne,
+.ofisesTextTwo {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+
+  margin-bottom: 26px;
+}
+.ofisesTextOne span,
+.ofisesTextTwo span {
+  opacity: 0.5;
+}
+
+.footerSertification {
+  grid-area: l;
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
+
+  margin-bottom: 66px;
+}
+.sertificateRow {
+  display: flex;
+  gap: 104px;
+  margin-top: 19px;
+}
+.sertificationTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sertificateList {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+  margin-bottom: 13px;
+}
+.sertificationItem {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+  opacity: 0.5;
+}
+.footerPrivacy {
+  grid-area: m;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.privacyItem {
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--white-color);
+}
+.privcyItemDesc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1920px;
+  }
+  .wrapper {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 47px;
+    padding-bottom: -100px;
+
+    border-radius: 20px;
+    margin-top: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-areas:
+      '. . . . . . . . . . a a'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      'e e d d i i . c c c c c'
+      '. . . . . . . c c c c c'
+      'f f g g j j . k k l l l'
+      'f f g g j j . k k l l l'
+      'f f g g j j . k k l l l '
+      'f f g g j j . k k l l l '
+      'f f g g j j . k k l l l '
+      'f f g g j j . k k l l l '
+      'f f g g j j . k k l l l '
+      'f f g g j j . k k l l l '
+      '. . . . . . . . . . . .'
+      'm m m m m m m m m m b b';
+  }
+  .footerLogo {
+    width: 200px;
+    margin-left: auto;
+  }
+  .footerLogo img {
+    width: 200px;
+  }
+  .footerAbout {
+    gap: 10px;
+  }
+  .aboutTitle {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 44px;
+  }
+  .aboutItem {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .contactFormTitle {
+    margin-top: 0;
+    margin-bottom: 33px;
+
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .hustonTitle {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .foooterHuston {
+    width: 183px;
+  }
+  .hustonTitle span {
+    font-size: 16px;
+  }
+  .footerAdress {
+    margin-top: 42px;
+    margin-bottom: 26px;
+
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .huston .footerAdress {
+    margin-top: 22px;
+  }
+  .footerOfises {
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 198px;
+  }
+  .ofisesTitle {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 49px;
+  }
+  .ofisesTextOne,
+  .ofisesTextTwo {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 19px;
+  }
+  .footerSertification {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .sertificateRow {
+    gap: 56px;
+    margin-top: 49px;
+  }
+  .sertificationTitle {
+    max-height: 125px;
+    width: 195px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .sertificateList {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    gap: 10px;
+    grid-column: span 2;
+  }
+  .sertificationItem {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .footerPrivacy {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .privcyItemDesc {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--white-color);
+  }
+  .privcyItemDesc span {
+    opacity: 0.5;
+  }
+  .footerSocial {
+    gap: 23px;
+  }
+  .footerSocialItem {
+    width: 30px;
+    height: 30px;
+  }
+  .footerSocialItem img {
+    width: 15px;
+  }
+}

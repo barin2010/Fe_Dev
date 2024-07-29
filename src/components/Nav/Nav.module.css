@@ -1,4 +1,8 @@
+.navigation {
+  position: relative;
+}
 .wrapper {
+  position: relative;
   width: 100%;
 
   padding-top: 33px;
@@ -22,11 +26,15 @@
   height: 28px;
   border-radius: 50%;
   background-color: var(--primary-font-color);
+  transition: transform 0.5s ease, border-radius 0.5s ease;
 
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.burger.active {
+  transform: scale(20);
 }
 
 @media (min-width: 768px) {
@@ -47,11 +55,18 @@
     grid-template-columns: repeat(4, 1fr);
     width: 542px;
   }
+  /* .active {
+    color: var(--red-color);
+  } */
 
-  .navigationItem a {
+  .navigationItem {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
+  }
+  .navigationItem.active {
+    color: var(--red-color);
+    text-decoration: underline;
   }
   .button {
     display: flex;
@@ -67,5 +82,10 @@
     font-size: 20px;
     line-height: 1.4;
     color: var(--white-color);
+  }
+  .button:hover,
+  .button:focus {
+    background-color: var(--white-color);
+    color: var(--primary-font-color);
   }
 }

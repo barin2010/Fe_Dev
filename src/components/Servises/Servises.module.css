@@ -132,6 +132,7 @@
   .subTitleItem:not(:first-child) {
     display: block;
   }
+
   .botton {
     display: none;
   }
@@ -153,8 +154,11 @@
     letter-spacing: -0.01em;
     opacity: 0.32;
   }
+  .subTitleItem.active {
+    opacity: 1;
+  }
 
-  .subTitleItem::before {
+  .subTitleItem.active::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -162,7 +166,6 @@
     width: 100%;
     height: 1px;
     background-color: var(--red-color);
-    opacity: 0;
     transition: opacity 0.3s ease;
   }
   .subTitleItem:hover,

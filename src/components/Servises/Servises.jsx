@@ -1,25 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { nanoid } from 'nanoid';
+
+import servisesData from './servisesData.json';
 import css from './Servises.module.css';
 import arrow from '../../images/icons/arrowRight.svg';
 
 const Servises = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleTitleClick = index => {
+    setCurrentIndex(index);
+  };
+
+  const currentService = servisesData[currentIndex];
+
   return (
-    <section className="container">
+    <section className="container" id="services">
       <div className={css.wrapper}>
-        <div className={css.title}>Services</div>
+        <div className={css.title}>
+          <NavLink to="/services" className={css.title}>
+            Services
+          </NavLink>
+        </div>
         <div className={css.grid}>
           <div className={css.subTitle}>
             <ul className={css.subTitleList}>
-              <li className={css.subTitleItem}>Highway and Road Engineering</li>
-              <li className={css.subTitleItem}>Transportation Planning</li>
-              <li className={css.subTitleItem}>Traffic Engineering</li>
-              <li className={css.subTitleItem}>Bridges & Structural</li>
-              <li className={css.subTitleItem}>Construction Services</li>
-              <li className={css.subTitleItem}>
-                Intelligent Transportation Systems Design
-              </li>
-              <li className={css.subTitleItem}>Illumination</li>
-              <li className={css.subTitleItem}>Public Involvement</li>
+              {servisesData.map((servis, index) => (
+                <li
+                  key={nanoid()}
+                  className={`${css.subTitleItem} ${
+                    index === currentIndex ? css.active : ''
+                  }`}
+                  onClick={() => handleTitleClick(index)}
+                >
+                  {servis.title}
+                </li>
+              ))}
             </ul>
             <div className={css.botton}>
               <img className={css.bottnPrev} src={arrow} alt="arrow" />
@@ -32,24 +49,11 @@ const Servises = () => {
           <div className={css.servisesCard}>
             <div className={css.cardListWrapper}>
               <ul className={css.cardList}>
-                <li className={css.cardItem}>
-                  Our mission is to accomplish great things, exceed our clients’
-                  expectations and meet the challenges of our growing
-                  infrastructure through practical engineering solutions,
-                  innovation, and hard work.
-                </li>
-                <li className={css.cardItem}>
-                  Our diverse group of Professional Engineers and Designers lead
-                  the way by providing a full range of  services in roads and
-                  highways: hands-on design management of roadway design,
-                  traffic control plans, schematic design, minor and major
-                  bridge design, traffic engineering studies, traffic demand
-                  modeling, intelligent transportation systems, signing and
-                  pavement markings, roadway hydraulics, from minor crossings
-                  through major highways and interchanges across the state,
-                  including the reconstruction of the $1.5 billion US 290
-                  corridor.
-                </li>
+                {currentService.items.map(item => (
+                  <li className={css.cardItem} key={nanoid()}>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className={css.cardBotton}>

@@ -1,13 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import css from './About.module.css';
 
 const About = () => {
   return (
-    <section className={css.about}>
+    <section className={css.about} id="about">
       <div className="container">
         <div className={css.wrapper}>
           <ul className={css.grid}>
-            <p className={css.gridTitle}> About</p>
+            {/* <p className={css.gridTitle}> About</p> */}
+            <NavLink to="/about" className={css.gridTitle}>
+              About
+            </NavLink>
             <li className={`${css.gridItem} ${css.item1}`}>
               <p className={css.aboutTitle}>Mission:</p>
               <p className={css.aboutDesc}>

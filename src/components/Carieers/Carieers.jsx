@@ -2,12 +2,14 @@ import React from 'react';
 import css from './Carieers.module.css';
 import carieerMob from '../../images/carieers/carieerMob.jpg';
 import carieerMob_2x from '../../images/carieers/carieerMob@2x.jpg';
+import carieerDesc from '../../images/carieers/carieerDesc.jpg';
+import carieerDesc_2x from '../../images/carieers/carieerDesc@2x-min.jpg';
 import world from '../../images/icons/world.svg';
 import arrow from '../../images/icons/Arrow 18.svg';
 
 const Carieers = () => {
   return (
-    <section className={css.carrieer}>
+    <section className={css.carrieer} id='careers'>
       <div className={css.wrapper}>
         <div className={css.carrieerTop}>
           <p className={css.carrieerTopTitle}>Careers</p>
@@ -23,12 +25,20 @@ const Carieers = () => {
           </ul>
           <div className={css.carieerImage}>
             <div className={css.carieerImageBox}>
-              <img
-                className={css.img}
-                src={carieerMob}
-                alt="people"
-                srcSet={`${carieerMob} 1x, ${carieerMob_2x} 2x`}
-              />
+              <picture>
+                <source
+                  className={css.img}
+                  srcSet={`${carieerDesc} 1x, ${carieerDesc_2x} 2x`}
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  className={css.img}
+                  src={carieerMob}
+                  alt="people"
+                  srcSet={`${carieerMob} 1x, ${carieerMob_2x} 2x`}
+                />
+              </picture>
             </div>
             <div className={css.carieerImageWorld}>
               <img className={css.imageWorld} src={world} alt="world" />

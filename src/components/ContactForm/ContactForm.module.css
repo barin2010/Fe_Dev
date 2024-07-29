@@ -1,0 +1,86 @@
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 14px;
+  background-color: var(--white-color);
+  border-radius: 13px;
+}
+
+.formGroup {
+  margin-bottom: 12px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 13px;
+  outline: none;
+  border: none;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.formGroup textarea {
+  height: 46px;
+  resize: vertical;
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  background-color: transparent;
+
+  font-size: 18px;
+  color: var(--white-color);
+
+  margin-top: 30px;
+  margin-bottom: 68px;
+}
+
+.sendButton:hover {
+  background-color: var(--white-color);
+  color: var(--primary-font-color);
+}
+
+@media (min-width: 768px) {
+  .contactForm {
+    width: 724px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 19px 14px;
+  }
+
+  .sendButton {
+    margin-top: 11px;
+    margin-bottom: 0;
+    grid-column: span 2;
+
+    font-size: 20px;
+    padding: 18px;
+  }
+  .formGroup {
+    margin-bottom: 0;
+  }
+  .formGroup input::placeholder,
+  .formGroup textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .formGroup input,
+  .formGroup textarea {
+    padding: 13px 17px;
+  }
+}
