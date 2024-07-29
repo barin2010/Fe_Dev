@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fe_Dev/static/css/main.2623cb90.css",
-    "main.js": "/Fe_Dev/static/js/main.6d05b9e9.js",
+    "main.css": "/Fe_Dev/static/css/main.ff69c421.css",
+    "main.js": "/Fe_Dev/static/js/main.bffb67d7.js",
     "static/media/borderDesc@2x.jpg": "/Fe_Dev/static/media/borderDesc@2x.3fd82cf3b51071a31243.jpg",
     "static/media/ArialMT.woff": "/Fe_Dev/static/media/ArialMT.e4af816a9a4fe4df98eb.woff",
     "static/media/Arial-BoldMT.woff": "/Fe_Dev/static/media/Arial-BoldMT.0f72496113227f9e3079.woff",
@@ -97,11 +97,11 @@
     "static/media/facebookDesc.svg": "/Fe_Dev/static/media/facebookDesc.ae97ff9bba8a97a9d2bf03a388024707.svg",
     "static/media/facebookMob.svg": "/Fe_Dev/static/media/facebookMob.4b7c8ae74c87b8b944741054367a3fe0.svg",
     "static/media/burger.svg": "/Fe_Dev/static/media/burger.c8651d21a5ab753f4a7d296974258b98.svg",
-    "main.2623cb90.css.map": "/Fe_Dev/static/css/main.2623cb90.css.map",
-    "main.6d05b9e9.js.map": "/Fe_Dev/static/js/main.6d05b9e9.js.map"
+    "main.ff69c421.css.map": "/Fe_Dev/static/css/main.ff69c421.css.map",
+    "main.bffb67d7.js.map": "/Fe_Dev/static/js/main.bffb67d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2623cb90.css",
-    "static/js/main.6d05b9e9.js"
+    "static/css/main.ff69c421.css",
+    "static/js/main.bffb67d7.js"
   ]
 }
