@@ -1,12 +1,12 @@
 // import React, { useRef } from 'react';
 import React, { useRef, useState } from 'react';
 import css from './VideoPlayer.module.css';
-import mute from '../../images/icons/mute.png';
-import muteX from '../../images/icons/muteX.png';
+import mute from '../../images/icons/mute.svg';
+import muteX from '../../images/icons/muteX.svg';
 
 const VideoPlayer = () => {
   const videoRef = useRef(null);
-  //   const setIsMuted = useState(true);
+
   const [isMuted, setIsMuted] = useState(true);
 
   const handleMuteToggle = () => {
@@ -22,7 +22,7 @@ const VideoPlayer = () => {
         <video
           className={css.playeer}
           ref={videoRef}
-          src=""
+          src="../../downloads/42318-431511222_tiny.mp4"
           type="video/mp4"
           autoPlay
           loop
