@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fe_Dev/static/css/main.84d6ed83.css",
-    "main.js": "/Fe_Dev/static/js/main.a1bfa0e7.js",
+    "main.css": "/Fe_Dev/static/css/main.74cfdd2c.css",
+    "main.js": "/Fe_Dev/static/js/main.c4f05f59.js",
     "reactPlayerYouTube.js": "/Fe_Dev/static/js/reactPlayerYouTube.175a87f4.chunk.js",
     "reactPlayerSoundCloud.js": "/Fe_Dev/static/js/reactPlayerSoundCloud.4999bd98.chunk.js",
     "reactPlayerVimeo.js": "/Fe_Dev/static/js/reactPlayerVimeo.1a9ebe38.chunk.js",
@@ -113,8 +113,8 @@
     "static/media/facebookDesc.svg": "/Fe_Dev/static/media/facebookDesc.ae97ff9bba8a97a9d2bf03a388024707.svg",
     "static/media/facebookMob.svg": "/Fe_Dev/static/media/facebookMob.4b7c8ae74c87b8b944741054367a3fe0.svg",
     "static/media/burger.svg": "/Fe_Dev/static/media/burger.c8651d21a5ab753f4a7d296974258b98.svg",
-    "main.84d6ed83.css.map": "/Fe_Dev/static/css/main.84d6ed83.css.map",
-    "main.a1bfa0e7.js.map": "/Fe_Dev/static/js/main.a1bfa0e7.js.map",
+    "main.74cfdd2c.css.map": "/Fe_Dev/static/css/main.74cfdd2c.css.map",
+    "main.c4f05f59.js.map": "/Fe_Dev/static/js/main.c4f05f59.js.map",
     "reactPlayerYouTube.175a87f4.chunk.js.map": "/Fe_Dev/static/js/reactPlayerYouTube.175a87f4.chunk.js.map",
     "reactPlayerSoundCloud.4999bd98.chunk.js.map": "/Fe_Dev/static/js/reactPlayerSoundCloud.4999bd98.chunk.js.map",
     "reactPlayerVimeo.1a9ebe38.chunk.js.map": "/Fe_Dev/static/js/reactPlayerVimeo.1a9ebe38.chunk.js.map",
@@ -131,7 +131,7 @@
     "reactPlayerPreview.82c3a98b.chunk.js.map": "/Fe_Dev/static/js/reactPlayerPreview.82c3a98b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84d6ed83.css",
-    "static/js/main.a1bfa0e7.js"
+    "static/css/main.74cfdd2c.css",
+    "static/js/main.c4f05f59.js"
   ]
 }
