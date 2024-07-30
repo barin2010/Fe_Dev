@@ -15,18 +15,20 @@ const VideoPlayer = () => {
   return (
     <div className={css.videoPlayer}>
       <div className={css.playerWrapper}>
-        <ReactPlayer
-          className={css.player}
-          ref={playerRef}
-          url="https://www.youtube.com/watch?v=wnhvanMdx4s"
-          playing
-          loop
-          muted={isMuted}
-          controls
-          width="100%"
-          height="100%"
-          style={{ aspectRatio: '16/9' }}
-        />
+        <div className={css.border}>
+          <ReactPlayer
+            className={css.player}
+            ref={playerRef}
+            url="https://www.youtube.com/watch?v=wnhvanMdx4s"
+            playing
+            loop
+            muted={isMuted}
+            controls
+            width="100%"
+            height="100%"
+            style={{ aspectRatio: '16/9' }}
+          />
+        </div>
         <button className={css.buttonMute} onClick={handleMuteToggle}>
           {isMuted ? (
             <img src={mute} alt="mute" />

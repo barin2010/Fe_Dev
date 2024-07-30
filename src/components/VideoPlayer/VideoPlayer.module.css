@@ -11,8 +11,9 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
+}
+.videoPlayer {
   margin-bottom: 70px;
-  margin: 0 auto;
 }
 
 .buttonMute {
@@ -25,21 +26,24 @@
 
 @media (min-width: 768px) {
   .videoPlayer {
-    padding: 0 60px;
     width: 1920px;
     display: flex;
+    padding: 0 60px;
     align-items: center;
     justify-content: center;
-  }
-  .playeerWrapper {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .videoPlayer {
     margin-bottom: 100px;
     border-radius: 20px;
   }
+  .playeerWrapper {
+    width: 100%;
+    /* border-radius: 20px; */
+  }
+  .border {
+    border-radius: 20px;
+
+    overflow: hidden;
+  }
+
   .playeer {
     border-radius: 20px;
   }
